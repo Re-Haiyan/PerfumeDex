@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Android: debug build and checks",
+      "type": "shell",
+      "command": "$env:JAVA_HOME='${workspaceFolder}/.tools/java/jdk-17.0.21.1+2'; $env:ANDROID_HOME='${workspaceFolder}/.tools/sdk'; & ./gradlew.bat assembleDebug testDebugUnitTest lintDebug",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
